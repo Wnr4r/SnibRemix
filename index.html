@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snib v1.0</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="input-checker">
+      Some fields are empty
+    </div>
+    <div class="app-container">
+      <div class="user-input">
+        <h3 class="heading-3">Snib v1.0</h3>
+        <form action="#" class="form">
+          <div class="form__group">
+            <input type="text" id = "mine_id" class="form__input"
+            placeholder="Mine ID" required">
+            <label for="mine_id" class="form__label">Mine ID</label>
+          </div>
+          <div class="form__group">
+            <input type="text" id = "mine_count" class="form__input"
+            placeholder="Mines Count" required">
+            <label for="mines_count" class="form__label">Mines Count</label>
+          </div>
+          <div class="form__group">
+            <input type="text" id = "last_reinforcement_time"
+            class="form__input" placeholder="Reinforcement Time" required">
+            <label for="last_reinforcement_time" class="form__label"
+              >Reinforcement Time</label
+            >
+          </div>
+          <div class="form__faction">
+            <div class="custom-select faction__one" style="width: 120px">
+              <select>
+                <option value="">Select faction 1</option>
+                <option value="machine"">Machine</option>
+                <option value="trench" >Trench</option>
+                <option value="ore" >Ore</option>
+                <option value="abyss" >Abyss</option>
+                <option value="faeries" >Faeries</option>
+                <option value="lux" >Lux</option>
+                <option value="no_faction" class="faction">No Faction</option>
+              </select>
+            </div>
+            <div class="custom-select faction__two" style="width: 120px">
+              <select>
+                <option value="">Select faction 2</option>
+                <option value="machine"">Machine</option>
+                <option value="trench" >Trench</option>
+                <option value="ore" >Ore</option>
+                <option value="abyss" >Abyss</option>
+                <option value="faeries" >Faeries</option>
+                <option value="lux" >Lux</option>
+                <option value="no_faction">No Faction</option>
+              </select>
+            </div>
+        </div>
+          <div class="form__group form__btn">
+            <button class="btn btn--start">Start Scan</button>
+            <button class="btn btn--stop">Stop Scan</button>
+            <button class="btn btn--reset">Reset</button>
+          </div>
+        </form>
+      </div>
+      <div class="scanning-mine hidden" id="clear-box">
+        <span class="scanning-mine__status hidden"></span>
+      </div>
+    </div>
+    <script src="js/customselectplugin.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
